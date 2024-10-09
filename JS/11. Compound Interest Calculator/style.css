@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif,arial;
+    background-color: hsl(0, 0%, 75%);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.30); /* 5px by 5px with blur of 10px, opacity 30% using alpha of HSLA */
+    display: flex; /* ordering form elements using flex */
+    flex-direction: column;
+    align-items: center; /* makes the items smaller idk why */
+}
+
+label {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+input {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid hsl(0, 0%, 30%);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 25px; 
+}
+
+button {
+    font-size: 1.5em;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer; /* hovering makes it a pointer */
+}
+
+#total /* id total */ {
+    font-size: 2em;
+}
+
+#total-amount {
+    font-weight: bold;
+}

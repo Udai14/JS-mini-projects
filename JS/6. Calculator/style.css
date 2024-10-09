@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /*horizontal alignment*/
+    align-items: center; /*vertical alignment*/
+    height: 100vh; /*height of body is 100% of viewport height to place calculator in the center of page*/
+    background-color: hsl(0,0%,95%);
+}
+
+#calculator { /* main div */
+    font-family: sans-serif, Arial; 
+    background-color: hsl(0,0%,15%); /* grey */
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden; /* so display is hidden if it overflows the 500px */
+}
+
+#display {
+    width: 100%; /*100% of container */
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /*repeat(no. of repeats, size of repeats) ; 1fr= 1 fractional unit , here it makes it even space*/
+    gap: 10px; /* space bw rows */
+    padding: 25px; /* padding around the keys */
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /*rounded buttons*/
+    border: none;
+    background-color: hsl(0, 0%, 30%); 
+    color: white; /*font color is white*/
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer; /* hover over button makes cursor a pointer */
+}
+/* keys is the div element containing all the buttons */
+
+button:hover {
+    background-color: hsl(0, 0%, 40%); /*make the button lighter on hovering */
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%); /*make the button flash on clicking */
+}
+.operatorBtn {
+    background-color: hsl(35, 100%, 55%); 
+}
+.operatorBtn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operatorBtn:active {
+    background-color: hsl(35, 100%, 75%);
+}

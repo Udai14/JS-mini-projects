@@ -1,0 +1,25 @@
+body{
+    background-image: url(background-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*for scrolling, not needed here*/
+    margin: 0;
+    backdrop-filter: blur(0.5px);
+}
+
+#clock-container {
+    display:flex;
+    justify-content: center; /* main axis */
+    align-items: center;   /* cross axis */
+    height: 100vh; /*occupies entire view height */
+}
+
+#clock {
+    font-family: 'Trebuchet MS';
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}

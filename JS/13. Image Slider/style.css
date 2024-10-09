@@ -1,0 +1,42 @@
+.slider { /* container class "slider" */
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img { /* all images in class slider */
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide { /* img containing displaySlide class will be displayed */
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {/* all buttons in class slider */
+    position: absolute; /*positions an element wrt its parent*/
+    top: 50%; /*y-axis 50%*/
+    transform: translateY(-50%); /*moves the button up by 50% of its own height, meaning its in the exact middle */
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.prev {
+    left: 0; /* aligns left */
+}
+
+.next {
+    right: 0; /* aligns right */
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
